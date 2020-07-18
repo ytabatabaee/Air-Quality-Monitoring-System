@@ -2,7 +2,17 @@
 <WORKSPACE>
  <FRAME activewindow="0">
   <PLACEMENT>2c0000000200000003000000ffffffffffffffffffffffffffffffff8300000009000000d4040000d0020000</PLACEMENT>
-  <WINDOW type="default" module="ISIS"/>
+  <WINDOW type="default" module="VSMSTUDIO">
+   <FILE LINE="70" ACTIVE="TRUE" FIRST="42" NAME="ARDUINO YUN/main.ino" INDEX="0"/>
+   <STATE NAME="EDIT" VALUE="AAAA/wAAAAH9AAAAAgAAAAAAAAEAAAAB6vwCAAAAAvsAAAAQAFAAcgBvAGoAZQBjAHQAcwEAAAAAAAAB6gAAASwA////+wAAABQAUAByAG8AcABlAHIAdABpAGUAcwAAAAFWAAAAlAAAAGQA////AAAAAwAABU4AAABm/AEAAAAB+wAAACAATwB1AHQAcAB1AHQARABvAGMAawBXAGkAZABnAGUAdAEAAAAAAAAFTgAAAFAA////AAAESgAAAeoAAAABAAAAAgAAAAgAAAAC/AAAAAA="/>
+   <PROJECT ACTIVE="TRUE" NAME="ARDUINO YUN" CONFIGURATION="Release">
+    <PROGRAMMER NAME="LEODUDE" INTERFACE="Arduino Yun">
+     <PROPERTY NAME="PORT" VALUE=""/>
+     <PROPERTY NAME="PORTCLOCK" VALUE="57600"/>
+     <PROPERTY NAME="UPLOADER" VALUE="ArduinoYun.hex"/>
+    </PROGRAMMER>
+   </PROJECT>
+  </WINDOW>
  </FRAME>
  <MODULE name="VSMDEBUG">
   <PWI>
@@ -35,7 +45,7 @@
    <POPUP w="78" x="1283" flags="00000013" y="128" h="572" pid="4097" iid="4097">
     <PROPERTIES/>
    </POPUP>
-   <POPUP w="30" x="5" flags="00000008" y="106" h="16" pid="3" iid="1">
+   <POPUP w="226" x="5" flags="00000008" y="106" h="215" pid="3" iid="1">
     <PROPERTIES/>
    </POPUP>
    <POPUP w="1" x="5" flags="0000000a" y="106" h="1" pid="10" iid="1">
@@ -68,7 +78,7 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="50" x="5" flags="00000008" y="106" h="39" pid="16" iid="1">
+   <POPUP w="366" x="5" flags="00000008" y="106" h="468" pid="16" iid="1">
     <PROPERTIES/>
    </POPUP>
    <POPUP w="1" x="5" flags="0000000a" y="106" h="2" pid="7" iid="1">

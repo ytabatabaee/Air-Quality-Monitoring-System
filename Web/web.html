@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:black;">
+<script>
+function myFunction(x) {
+	document.getElementById("location").src = x;
+}
+</script>
+<script src='./require.js'></script>
+<script>
+// Example POST method implementation:
+async function postData(url = '', data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: 'follow', // manual, *follow, error
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
+</script>
+<script>
+
+array = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
+async function makeData(){
+	var num_of_devices = 1;
+	for (var i = 0; i < 3; i++)
+		for (var j = 0; j < 20; j++)
+			array[i][j] = 0;
+			
+	for (var i = 1; i < num_of_devices+1; i++){
+		var d = "";
+			postData('http://localhost:9200/iot/_search',
+			{
+				"from":0,
+				"size": 20,
+				"query":{
+					"match":{
+						"device": i
+					}
+				},
+				"sort":{
+					"i":{"order":"desc"}
+				}
+			})
+			.then(data => {
+				for (var j = 0; j < 20; j++){
+					d = data['hits']['hits'][j]['_source']['data'].slice(42, -3).split(",");
+					for (var k = 0; k < 3; k++){
+					//console.log(parseFloat(d[k]));
+						array[k][j] += parseFloat(d[k]);
+					}
+				}
+			});
+	}
+	for (var i = 0; i < 3; i++)
+		for (var j = 0; j < 20; j++)
+			array[i][j] = array[i][j] / num_of_devices;
+	//console.log(array);
+}
+</script>
+
+<script src="require.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['gauge']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data_gauge = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ['CO', 0],
+          ['CO2', 0],
+          ['AirIdx', 0]
+        ]);
+
+        var options = {
+          width: 400, height: 120,
+          minorTicks: 5, max: 500
+        };
+
+        var gauge = new google.visualization.Gauge(document.getElementById('chart_div'));
+
+        gauge.draw(data_gauge, options);
+
+        setInterval(function() {
+			var x1 = array[0][0];
+			var x2 = array[1][0];
+			var x3 = array[2][0];
+			if (x1 > 0 && x2 > 0 && x3 > 0){
+				data_gauge.setValue(0, 1, x1);
+				data_gauge.setValue(1, 1, x2);
+				data_gauge.setValue(2, 1, x3);
+			}
+          gauge.draw(data_gauge, options);
+        }, 1000);
+		
+      }
+</script>
+	
+<script>
+window.onload = function () {
+var dps = []; // dataPoints
+var dps2 = [];
+var dps3 = [];
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title:{
+		text: "Average History"
+	},
+	axisY: {
+		title: "Amount",
+		includeZero: false,
+	},
+	legend:{
+		cursor: "pointer",
+		fontSize: 16,
+	},
+	toolTip:{
+		shared: true
+	},
+	data: [{
+		name: "CO",
+		type: "spline",
+		showInLegend: true,
+		dataPoints: dps
+	},
+	{
+		name: "CO2",
+		type: "spline",
+		showInLegend: true,
+		dataPoints: dps2,
+	},
+	{
+		name: "AirIdx",
+		type: "spline",
+		showInLegend: true,
+		dataPoints: dps3,
+	}]
+});
+
+var xVal = 0;
+var yVal = 0; 
+var updateInterval = 2000;
+var dataLength = 20; // number of dataPoints visible at any point
+
+var updateChart = async function (count) {
+
+	count = count || 1;
+	
+	for (var j = 0; j < 1; j++) {
+		await makeData();
+		setTimeout(function() {
+		//console.log(array[0][19]);
+		yVal = array[0][0];
+		if (yVal > 0.){
+		dps.push({
+			x: xVal,
+			y: yVal
+		});}}, 500);
+		
+		setTimeout(function() {
+		yVal = array[1][0];
+		if (yVal > 0.){
+		dps2.push({
+			x: xVal,
+			y: yVal
+		});}}, 500);
+		
+		setTimeout(function() {
+		yVal = array[2][0];
+		if (yVal > 0.){
+		dps3.push({
+			x: xVal,
+			y: yVal
+		});}}, 500);
+		
+		xVal++;
+	}
+
+	if (dps.length > dataLength) {
+		dps.shift();
+		dps2.shift();
+		dps3.shift();
+	}
+
+	chart.render();
+};
+
+updateChart(dataLength);
+setInterval(async function(){updateChart()}, updateInterval);
+
+}
+</script>
+
+<div id="chartContainer" style="height: 370px; width:40%;"></div>
+
+<div id="chart_div" style="width: 400px; height: 120px;"></div>
+<div id="loc1_container" style="height: 500px; width:100%;">
+<iframe id=location src="http://localhost:8080", style="height: 475px; width:100%;"></iframe></div>
+</body>
+</html>

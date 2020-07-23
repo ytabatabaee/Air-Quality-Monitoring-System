@@ -1,0 +1,86 @@
+\documentclass[final]{report}
+\usepackage[a4paper, top=1.5cm, bottom=2cm, left=1.8cm, right=1.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{verbatim}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{siunitx}
+\usepackage{color}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{xepersian}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.9,0.9,0.9}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=blue,
+}
+
+\lstset{frame=tb,
+	backgroundcolor=\color{gray},
+	language=shell,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	showlines = true,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3,
+	escapeinside={<@}{@>}
+}
+
+
+\settextfont[Scale=1.2]{XB Zar}
+\aliasfontfeature{ItalicFont}{B Nazanin}
+\setdigitfont{B Nazanin}
+\setlatintextfont[Scale=1]{Times New Roman}
+\makeatletter
+\renewcommand{\thesection}{%
+  \ifnum\c@chapter<1 \@arabic\c@section
+  \else \thechapter.\@arabic\c@section
+  \fi
+}
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\renewcommand{\baselinestretch}{1.6}
+
+\title{
+	\textbf{گزارش نهایی پروژه سیستم‌های نهفته}
+	\bigskip
+	\\
+	{
+		\textbf{طراحی سامانه رصد وضعیت هوا}
+	}
+}
+\author{
+	\rl{گروه سه:}
+	\\
+	\rl{کوشا جافریان		95105454}
+	\\
+	\rl{سروش باسلی‌زاده     95105408}
+	\\	
+	\rl{یاسمین طباطبایی      95104866}
+	\\
+}
+
+\begin{document}
+	\maketitle
+
+	\input{body.tex}
+\end{document} 

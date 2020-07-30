@@ -183,39 +183,39 @@ var updateChart = async function (count) {
 		var xmax = yVal;
 		if (xmax >= 0 && xmax <= 50)
 		{
-			document.getElementById("Healthy").height = 30px;
-			document.getElementById("Healthy").width = 30px;
-			document.getElementById("Status").text = "Healthy";
+			document.getElementById('Healthy').height = "30px";
+			document.getElementById('Healthy').width = "30px";
+			document.getElementById('Status').text = "Healthy";
 		}			
 		else if (xmax >= 51 && xmax <= 100)
 		{
-			document.getElementById("OK").height = 30px;
-			document.getElementById("OK").width = 30px;
-			document.getElementById("Status").text = "OK";
+			document.getElementById('OK').height = "30px";
+			document.getElementById('OK').width = "30px";
+			document.getElementById('Status').text = "OK";
 		}
 		else if (xmax >= 101 && xmax <= 150)
 		{
-			document.getElementById("UnhealthySome").height = 30px;
-			document.getElementById("UnhealthySome").width = 30px;
-			document.getElementById("Status").text = "Unhealthy For Some";
+			document.getElementById('UnhealthySome').height = "30px";
+			document.getElementById('UnhealthySome').width = "30px";
+			document.getElementById('Status').text = "Unhealthy For Some";
 		}
 		else if (xmax >= 151 && xmax <= 200)
 		{
-			document.getElementById("Unhealthy").height = 30px;
-			document.getElementById("Unhealthy").width = 30px;
-			document.getElementById("Status").text = "Unhealthy";
+			document.getElementById('Unhealthy').height = "30px";
+			document.getElementById('Unhealthy').width = "30px";
+			document.getElementById('Status').text = "Unhealthy";
 		}			
 		else if (xmax >= 201 && xmax <= 300)
 		{
-			document.getElementById("VeryUnhealthy").height = 30px;
-			document.getElementById("VeryUnhealthy").width = 30px;
-			document.getElementById("Status").text = "Really Unhealthy";
+			document.getElementById('VeryUnhealthy').height = "30px";
+			document.getElementById('VeryUnhealthy').width = "30px";
+			document.getElementById('Status').text = "Really Unhealthy";
 		}			
 		else
 		{
-			document.getElementById("Dangerous").height = 30px;
-			document.getElementById("Dangerous").width = 30px;
-			document.getElementById("Status").text = "Dangerous";
+			document.getElementById('Dangerous').height = "30px";
+			document.getElementById('Dangerous').width = "30px";
+			document.getElementById('Status').text = "Dangerous";
 		}
 		if (yVal > 0.){
 		dps3.push({
@@ -271,7 +271,7 @@ setInterval(async function(){updateChart()}, updateInterval);
 </tr>
 <tr>
 <td colspan = 6>
-<div id = "Status" style="width:150px; height:20px; border:1px solid white; background-color:white; text-align:center";> Healthy </div>
+<div id = "Status" style="width:150; height:20; border:1 solid white; background-color:white; text-align:center";> Healthy </div>
 </td>
 </tr>
 </tbody>

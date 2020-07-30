@@ -207,7 +207,7 @@ var updateChart = async function (count) {
 			document.getElementById('VeryUnhealthy').style.width = "20px";
 			document.getElementById('Dangerous').style.height = "20px";
 			document.getElementById('Dangerous').style.width = "20px";
-			document.getElementById('Status').style.text = "Healthy";
+			document.getElementById('Status').innerHTML = "Healthy";
 		}			
 		else if (xmax >= 51 && xmax <= 100)
 		{
@@ -223,7 +223,7 @@ var updateChart = async function (count) {
 			document.getElementById('VeryUnhealthy').style.width = "20px";
 			document.getElementById('Dangerous').style.height = "20px";
 			document.getElementById('Dangerous').style.width = "20px";
-			document.getElementById('Status').style.text = "OK";
+			document.getElementById('Status').innerHTML = "OK";
 		}
 		else if (xmax >= 101 && xmax <= 150)
 		{
@@ -239,7 +239,7 @@ var updateChart = async function (count) {
 			document.getElementById('VeryUnhealthy').style.width = "20px";
 			document.getElementById('Dangerous').style.height = "20px";
 			document.getElementById('Dangerous').style.width = "20px";
-			document.getElementById('Status').style.text = "Unhealthy For Some";
+			document.getElementById('Status').innerHTML = "Unhealthy For Some";
 		}
 		else if (xmax >= 151 && xmax <= 200)
 		{
@@ -255,7 +255,7 @@ var updateChart = async function (count) {
 			document.getElementById('VeryUnhealthy').style.width = "20px";
 			document.getElementById('Dangerous').style.height = "20px";
 			document.getElementById('Dangerous').style.width = "20px";
-			document.getElementById('Status').style.text = "Unhealthy";
+			document.getElementById('Status').innerHTML = "Unhealthy";
 		}			
 		else if (xmax >= 201 && xmax <= 300)
 		{
@@ -271,7 +271,7 @@ var updateChart = async function (count) {
 			document.getElementById('VeryUnhealthy').style.width = "30px";
 			document.getElementById('Dangerous').style.height = "20px";
 			document.getElementById('Dangerous').style.width = "20px";
-			document.getElementById('Status').style.text = "Really Unhealthy";
+			document.getElementById('Status').innerHTML = "Really Unhealthy";
 		}			
 		else
 		{
@@ -287,7 +287,7 @@ var updateChart = async function (count) {
 			document.getElementById('VeryUnhealthy').style.width = "20px";
 			document.getElementById('Dangerous').style.height = "30px";
 			document.getElementById('Dangerous').style.width = "30px";
-			document.getElementById('Status').style.text = "Dangerous";
+			document.getElementById('Status').innerHTML = "Dangerous";
 		}
 		if (yVal > 0.){
 		dps3.push({
@@ -359,6 +359,6 @@ setInterval(async function(){updateChart()}, updateInterval);
 
 <div id="chart_div" style="width: 400px; height: 120px;"></div>
 <div id="loc1_container" style="height: 500px; width:100%;">
-<iframe id=location src="http://localhost:8080", style="height: 475px; width:100%;"></iframe></div>
+<iframe id=location src="http://localhost:8080", title="Locations" style="height: 475px; width:100%;"></iframe></div>
 </body>
 </html>

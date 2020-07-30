@@ -183,39 +183,39 @@ var updateChart = async function (count) {
 		var xmax = yVal;
 		if (xmax >= 0 && xmax <= 50)
 		{
-			document.getElementById('Healthy').height = "30px";
-			document.getElementById('Healthy').width = "30px";
-			document.getElementById('Status').text = "Healthy";
+			document.getElementById('Healthy').style.height = "30px";
+			document.getElementById('Healthy').style.width = "30px";
+			document.getElementById('Status').style.text = "Healthy";
 		}			
 		else if (xmax >= 51 && xmax <= 100)
 		{
-			document.getElementById('OK').height = "30px";
-			document.getElementById('OK').width = "30px";
-			document.getElementById('Status').text = "OK";
+			document.getElementById('OK').style.height = "30px";
+			document.getElementById('OK').style.width = "30px";
+			document.getElementById('Status').style.text = "OK";
 		}
 		else if (xmax >= 101 && xmax <= 150)
 		{
-			document.getElementById('UnhealthySome').height = "30px";
-			document.getElementById('UnhealthySome').width = "30px";
-			document.getElementById('Status').text = "Unhealthy For Some";
+			document.getElementById('UnhealthySome').style.height = "30px";
+			document.getElementById('UnhealthySome').style.width = "30px";
+			document.getElementById('Status').style.text = "Unhealthy For Some";
 		}
 		else if (xmax >= 151 && xmax <= 200)
 		{
-			document.getElementById('Unhealthy').height = "30px";
-			document.getElementById('Unhealthy').width = "30px";
-			document.getElementById('Status').text = "Unhealthy";
+			document.getElementById('Unhealthy').style.height = "30px";
+			document.getElementById('Unhealthy').style.width = "30px";
+			document.getElementById('Status').style.text = "Unhealthy";
 		}			
 		else if (xmax >= 201 && xmax <= 300)
 		{
-			document.getElementById('VeryUnhealthy').height = "30px";
-			document.getElementById('VeryUnhealthy').width = "30px";
-			document.getElementById('Status').text = "Really Unhealthy";
+			document.getElementById('VeryUnhealthy').style.height = "30px";
+			document.getElementById('VeryUnhealthy').style.width = "30px";
+			document.getElementById('Status').style.text = "Really Unhealthy";
 		}			
 		else
 		{
-			document.getElementById('Dangerous').height = "30px";
-			document.getElementById('Dangerous').width = "30px";
-			document.getElementById('Status').text = "Dangerous";
+			document.getElementById('Dangerous').style.height = "30px";
+			document.getElementById('Dangerous').style.width = "30px";
+			document.getElementById('Status').style.text = "Dangerous";
 		}
 		if (yVal > 0.){
 		dps3.push({

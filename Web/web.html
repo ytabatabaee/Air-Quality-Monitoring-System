@@ -97,6 +97,55 @@ async function makeData(){
 			var x1 = array[0][0];
 			var x2 = array[1][0];
 			var x3 = array[2][0];
+			var xmax = 0;
+			if (x1 >= x2 && x1 >= x3)
+			{
+				xmax = x1;
+			}
+			else if (x2 >= x1 && x2 >= x3)
+			{
+				xmax = x2;
+			}
+			else if (x3 >= x1 && x3 >= x2)
+			{
+				xmax = x3;
+			}
+			if (xmax >= 0 && xmax <= 50)
+			{
+				document.getElementById("Healthy").height = 30px;
+				document.getElementById("Healthy").width = 30px;
+				document.getElementById("Status").text = "Healthy";
+			}			
+			else if (xmax >= 51 && xmax <= 100)
+			{
+				document.getElementById("OK").height = 30px;
+				document.getElementById("OK").width = 30px;
+				document.getElementById("Status").text = "OK";
+			}
+			else if (xmax >= 101 && xmax <= 150)
+			{
+				document.getElementById("UnhealthySome").height = 30px;
+				document.getElementById("UnhealthySome").width = 30px;
+				document.getElementById("Status").text = "Unhealthy For Some";
+			}
+			else if (xmax >= 151 && xmax <= 200)
+			{
+				document.getElementById("Unhealthy").height = 30px;
+				document.getElementById("Unhealthy").width = 30px;
+				document.getElementById("Status").text = "Unhealthy";
+			}			
+			else if (xmax >= 201 && xmax <= 300)
+			{
+				document.getElementById("VeryUnhealthy").height = 30px;
+				document.getElementById("VeryUnhealthy").width = 30px;
+				document.getElementById("Status").text = "Really Unhealthy";
+			}			
+			else
+			{
+				document.getElementById("Dangerous").height = 30px;
+				document.getElementById("Dangerous").width = 30px;
+				document.getElementById("Status").text = "Dangerous";
+			}
 			if (x1 > 0 && x2 > 0 && x3 > 0){
 				data_gauge.setValue(0, 1, x1);
 				data_gauge.setValue(1, 1, x2);
@@ -204,40 +253,18 @@ setInterval(async function(){updateChart()}, updateInterval);
 }
 </script>
 
-.box
-{
-	float: left;
-	height: 20px;
-	width: 20px;
-	margin-bottom: 15px;
-	border: 1px solid black;
-	clear: both;
-}
-
-.red
-{
-	background-color: red;
-}
-
-.green
-{
-	background-color: green;
-}
-
-.blue 
-{
-	background-color: blue;
-}
-
 <div id="chartContainer" style="height: 370px; width:40%;"></div>
 
 <br>
 
-<div style="width:20px; height:20px; border:1px solid white; background-color: green";></div> <br>
-<div style="width:20px; height:20px; border:1px solid white; background-color: yellow";></div> <br>
-<div style="width:20px; height:20px; border:1px solid white; background-color: orange";></div> <br>
-<div style="width:20px; height:20px; border:1px solid white; background-color: red";> </div>
- 
+<div id= "Healthy" style="width:20px; height:20px; border:1px solid white; background-color: green";></div> <br>
+<div id= "OK" style="width:20px; height:20px; border:1px solid white; background-color: yellow";></div> <br>
+<div id= "UnhealthySome" style="width:20px; height:20px; border:1px solid white; background-color: orange";></div> <br>
+<div id= "Unhealthy" style="width:20px; height:20px; border:1px solid white; background-color: red";> </div> <br>
+<div id= "VeryUnhealthy" style="width:20px; height:20px; border:1px solid white; background-color: purple";> </div> <br>
+<div id= "Dangerous" style="width:20px; height:20px; border:1px solid white; background-color: brown";> </div> <br>
+
+<div id = "Status" style="width:50px; height:20px; border:1px solid white; background-color:white;";> Healthy </div> <br>
 
 <div id="chart_div" style="width: 400px; height: 120px;"></div>
 <div id="loc1_container" style="height: 500px; width:100%;">

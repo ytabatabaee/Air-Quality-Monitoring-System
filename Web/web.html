@@ -97,55 +97,6 @@ async function makeData(){
 			var x1 = array[0][0];
 			var x2 = array[1][0];
 			var x3 = array[2][0];
-			var xmax = 0;
-			if (x1 >= x2 && x1 >= x3)
-			{
-				xmax = x1;
-			}
-			else if (x2 >= x1 && x2 >= x3)
-			{
-				xmax = x2;
-			}
-			else if (x3 >= x1 && x3 >= x2)
-			{
-				xmax = x3;
-			}
-			if (xmax >= 0 && xmax <= 50)
-			{
-				document.getElementById("Healthy").height = 30px;
-				document.getElementById("Healthy").width = 30px;
-				document.getElementById("Status").text = "Healthy";
-			}			
-			else if (xmax >= 51 && xmax <= 100)
-			{
-				document.getElementById("OK").height = 30px;
-				document.getElementById("OK").width = 30px;
-				document.getElementById("Status").text = "OK";
-			}
-			else if (xmax >= 101 && xmax <= 150)
-			{
-				document.getElementById("UnhealthySome").height = 30px;
-				document.getElementById("UnhealthySome").width = 30px;
-				document.getElementById("Status").text = "Unhealthy For Some";
-			}
-			else if (xmax >= 151 && xmax <= 200)
-			{
-				document.getElementById("Unhealthy").height = 30px;
-				document.getElementById("Unhealthy").width = 30px;
-				document.getElementById("Status").text = "Unhealthy";
-			}			
-			else if (xmax >= 201 && xmax <= 300)
-			{
-				document.getElementById("VeryUnhealthy").height = 30px;
-				document.getElementById("VeryUnhealthy").width = 30px;
-				document.getElementById("Status").text = "Really Unhealthy";
-			}			
-			else
-			{
-				document.getElementById("Dangerous").height = 30px;
-				document.getElementById("Dangerous").width = 30px;
-				document.getElementById("Status").text = "Dangerous";
-			}
 			if (x1 > 0 && x2 > 0 && x3 > 0){
 				data_gauge.setValue(0, 1, x1);
 				data_gauge.setValue(1, 1, x2);
@@ -229,6 +180,43 @@ var updateChart = async function (count) {
 		
 		setTimeout(function() {
 		yVal = array[2][0];
+		var xmax = yVal;
+		if (xmax >= 0 && xmax <= 50)
+		{
+			document.getElementById("Healthy").height = 30px;
+			document.getElementById("Healthy").width = 30px;
+			document.getElementById("Status").text = "Healthy";
+		}			
+		else if (xmax >= 51 && xmax <= 100)
+		{
+			document.getElementById("OK").height = 30px;
+			document.getElementById("OK").width = 30px;
+			document.getElementById("Status").text = "OK";
+		}
+		else if (xmax >= 101 && xmax <= 150)
+		{
+			document.getElementById("UnhealthySome").height = 30px;
+			document.getElementById("UnhealthySome").width = 30px;
+			document.getElementById("Status").text = "Unhealthy For Some";
+		}
+		else if (xmax >= 151 && xmax <= 200)
+		{
+			document.getElementById("Unhealthy").height = 30px;
+			document.getElementById("Unhealthy").width = 30px;
+			document.getElementById("Status").text = "Unhealthy";
+		}			
+		else if (xmax >= 201 && xmax <= 300)
+		{
+			document.getElementById("VeryUnhealthy").height = 30px;
+			document.getElementById("VeryUnhealthy").width = 30px;
+			document.getElementById("Status").text = "Really Unhealthy";
+		}			
+		else
+		{
+			document.getElementById("Dangerous").height = 30px;
+			document.getElementById("Dangerous").width = 30px;
+			document.getElementById("Status").text = "Dangerous";
+		}
 		if (yVal > 0.){
 		dps3.push({
 			x: xVal,

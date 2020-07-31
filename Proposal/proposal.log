@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.12.26)  31 JUL 2020 18:54
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.12.26)  11 APR 2020 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./report.tex
-(./report.tex
+**./proposal.tex
+(./proposal.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (c:/texlive/2016/texmf-dist/tex/latex/base/report.cls
@@ -81,43 +81,10 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-(c:/texlive/2016/texmf-dist/tex/latex/subfig/subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-
-(c:/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-(c:/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen113
-\captionmargin@=\dimen114
-\captionwidth=\dimen115
-\caption@tempdima=\dimen116
-\caption@indent=\dimen117
-\caption@parindent=\dimen118
-\caption@hangindent=\dimen119
-)
-\c@ContinuedFloat=\count91
-)
-\c@KVtest=\count92
-\sf@farskip=\skip43
-\sf@captopadj=\dimen120
-\sf@capskip=\skip44
-\sf@nearskip=\skip45
-\c@subfigure=\count93
-\c@subfigure@save=\count94
-\c@lofdepth=\count95
-\c@subtable=\count96
-\c@subtable@save=\count97
-\c@lotdepth=\count98
-\sf@top=\skip46
-\sf@bottom=\skip47
-)
 (c:/texlive/2016/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen121
-\WF@size=\dimen122
-\c@WF@wrappedlines=\count99
+\wrapoverhang=\dimen113
+\WF@size=\dimen114
+\c@WF@wrappedlines=\count91
 \WF@box=\box26
 \WF@everypar=\toks16
 Package: wrapfig 2003/01/31  v 3.6
@@ -130,189 +97,25 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 )
 (c:/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip48
-\subfigcapskip=\skip49
-\subfigcaptopadj=\dimen123
-\subfigbottomskip=\skip50
-\subfigcapmargin=\dimen124
-\subfiglabelskip=\skip51
-
-
-! LaTeX Error: Command \c@subfigure already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 \newcounter{subfigure}
-                            [figure]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \l@subfigure already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.123 ...xxxline{\ext@subfigure}{2}{3.8em}{2.5em}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \c@lofdepth already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.124 \newcounter{lofdepth}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \c@subtable already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.126 \newcounter{subtable}
-                           [table]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \l@subtable already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 ...dxxxline{\ext@subtable}{2}{3.8em}{2.5em}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \c@lotdepth already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 \newcounter{lotdepth}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen115
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen116
+\subfiglabelskip=\skip46
+\c@subfigure=\count92
+\c@lofdepth=\count93
+\c@subtable=\count94
+\c@lotdepth=\count95
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (c:/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip52
-\subfig@bottom=\skip53
-
-
-! LaTeX Error: Command \listsubcaptions already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.294     {\@listsubcaptions{\@captype}}}
-                                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \@listsubcaptions already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.305   \gdef\@subfigcaptionlist{}}
-                                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \@dottedxxxline already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.358   \fi}
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \subfloat@label already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.386 ...           \@nameuse{thesub\@captype}.)}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \sf@@sub@label already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.411   \@esphack}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \subref already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.413   \ref{sub@#1}}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+(c:/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -325,7 +128,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/10 v2.15b AMS math features
-\@mathmargin=\skip54
+\@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -334,79 +137,79 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
-\ex@=\dimen125
+\ex@=\dimen117
 ))
 (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen126
+\pmbraise@=\dimen118
 )
 (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count100
+\inf@bad=\count96
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count101
-\leftroot@=\count102
+\uproot@=\count97
+\leftroot@=\count98
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count103
-\DOTSCASE@=\count104
+\classnum@=\count99
+\DOTSCASE@=\count100
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
-\big@size=\dimen127
+\big@size=\dimen119
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count105
-\c@MaxMatrixCols=\count106
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
 \dotsspace@=\muskip10
-\c@parentequation=\count107
-\dspbrk@lvl=\count108
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
 \tag@help=\toks21
-\row@=\count109
-\column@=\count110
-\maxfields@=\count111
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
 \andhelp@=\toks22
-\eqnshift@=\dimen128
-\alignsep@=\dimen129
-\tagshift@=\dimen130
-\tagwidth@=\dimen131
-\totwidth@=\dimen132
-\lineht@=\dimen133
+\eqnshift@=\dimen120
+\alignsep@=\dimen121
+\tagshift@=\dimen122
+\tagwidth@=\dimen123
+\totwidth@=\dimen124
+\lineht@=\dimen125
 \@envbody=\toks23
-\multlinegap=\skip55
-\multlinetaggap=\skip56
+\multlinegap=\skip50
+\multlinetaggap=\skip51
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
 (c:/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip57
-\enit@outerparindent=\dimen134
+\labelindent=\skip52
+\enit@outerparindent=\dimen126
 \enit@toks=\toks25
 \enit@inbox=\box29
-\enitdp@description=\count112
+\enitdp@description=\count108
 )
 (c:/texlive/2016/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count113
+\lst@mode=\count109
 \lst@gtempboxa=\box30
 \lst@token=\toks26
-\lst@length=\count114
-\lst@currlwidth=\dimen135
-\lst@column=\count115
-\lst@pos=\count116
-\lst@lostspace=\dimen136
-\lst@width=\dimen137
-\lst@newlines=\count117
-\lst@lineno=\count118
-\lst@maxwidth=\dimen138
+\lst@length=\count110
+\lst@currlwidth=\dimen127
+\lst@column=\count111
+\lst@pos=\count112
+\lst@lostspace=\dimen128
+\lst@width=\dimen129
+\lst@newlines=\count113
+\lst@lineno=\count114
+\lst@maxwidth=\dimen130
 
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count119
-\lst@skipnumbers=\count120
+\c@lstnumber=\count115
+\lst@skipnumbers=\count116
 \lst@framebox=\box31
 )
 (c:/texlive/2016/texmf-dist/tex/latex/listings/listings.cfg
@@ -428,37 +231,37 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
-\c_max_int=\count121
-\l_tmpa_int=\count122
-\l_tmpb_int=\count123
-\g_tmpa_int=\count124
-\g_tmpb_int=\count125
+\c_max_int=\count117
+\l_tmpa_int=\count118
+\l_tmpb_int=\count119
+\g_tmpa_int=\count120
+\g_tmpb_int=\count121
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count126
+\g__prg_map_int=\count122
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
-\l_iow_line_count_int=\count127
-\l__iow_target_count_int=\count128
-\l__iow_current_line_int=\count129
-\l__iow_current_word_int=\count130
-\l__iow_current_indentation_int=\count131
+\l_iow_line_count_int=\count123
+\l__iow_target_count_int=\count124
+\l__iow_current_line_int=\count125
+\l__iow_current_word_int=\count126
+\l__iow_current_indentation_int=\count127
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
-\c_zero_dim=\dimen139
-\c_max_dim=\dimen140
-\l_tmpa_dim=\dimen141
-\l_tmpb_dim=\dimen142
-\g_tmpa_dim=\dimen143
-\g_tmpb_dim=\dimen144
-\c_zero_skip=\skip58
-\c_max_skip=\skip59
-\l_tmpa_skip=\skip60
-\l_tmpb_skip=\skip61
-\g_tmpa_skip=\skip62
-\g_tmpb_skip=\skip63
+\c_zero_dim=\dimen131
+\c_max_dim=\dimen132
+\l_tmpa_dim=\dimen133
+\l_tmpb_dim=\dimen134
+\g_tmpa_dim=\dimen135
+\g_tmpb_dim=\dimen136
+\c_zero_skip=\skip53
+\c_max_skip=\skip54
+\l_tmpa_skip=\skip55
+\l_tmpb_skip=\skip56
+\g_tmpa_skip=\skip57
+\g_tmpb_skip=\skip58
 \c_zero_muskip=\muskip11
 \c_max_muskip=\muskip12
 \l_tmpa_muskip=\muskip13
@@ -466,18 +269,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count132
-\l_keys_choice_int=\count133
+\g__keyval_level_int=\count128
+\l_keys_choice_int=\count129
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
-\c__fp_leading_shift_int=\count134
-\c__fp_middle_shift_int=\count135
-\c__fp_trailing_shift_int=\count136
-\c__fp_big_leading_shift_int=\count137
-\c__fp_big_middle_shift_int=\count138
-\c__fp_big_trailing_shift_int=\count139
-\c__fp_Bigg_leading_shift_int=\count140
-\c__fp_Bigg_middle_shift_int=\count141
-\c__fp_Bigg_trailing_shift_int=\count142
+\c__fp_leading_shift_int=\count130
+\c__fp_middle_shift_int=\count131
+\c__fp_trailing_shift_int=\count132
+\c__fp_big_leading_shift_int=\count133
+\c__fp_big_middle_shift_int=\count134
+\c__fp_big_trailing_shift_int=\count135
+\c__fp_Bigg_leading_shift_int=\count136
+\c__fp_Bigg_middle_shift_int=\count137
+\c__fp_Bigg_trailing_shift_int=\count138
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box32
 \l_tmpa_box=\box33
@@ -486,13 +289,13 @@ L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \g_tmpb_box=\box36
 L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
 \l__coffin_internal_box=\box37
-\l__coffin_internal_dim=\dimen145
-\l__coffin_offset_x_dim=\dimen146
-\l__coffin_offset_y_dim=\dimen147
-\l__coffin_x_dim=\dimen148
-\l__coffin_y_dim=\dimen149
-\l__coffin_x_prime_dim=\dimen150
-\l__coffin_y_prime_dim=\dimen151
+\l__coffin_internal_dim=\dimen137
+\l__coffin_offset_x_dim=\dimen138
+\l__coffin_offset_y_dim=\dimen139
+\l__coffin_x_dim=\dimen140
+\l__coffin_y_dim=\dimen141
+\l__coffin_x_prime_dim=\dimen142
+\l__coffin_y_prime_dim=\dimen143
 \c_empty_coffin=\box38
 \l__coffin_aligned_coffin=\box39
 \l__coffin_aligned_internal_coffin=\box40
@@ -501,28 +304,28 @@ L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
 \l__coffin_display_coffin=\box43
 \l__coffin_display_coord_coffin=\box44
 \l__coffin_display_pole_coffin=\box45
-\l__coffin_display_offset_dim=\dimen152
-\l__coffin_display_x_dim=\dimen153
-\l__coffin_display_y_dim=\dimen154
+\l__coffin_display_offset_dim=\dimen144
+\l__coffin_display_x_dim=\dimen145
+\l__coffin_display_y_dim=\dimen146
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
 L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen155
-\l__box_bottom_dim=\dimen156
-\l__box_left_dim=\dimen157
-\l__box_right_dim=\dimen158
-\l__box_top_new_dim=\dimen159
-\l__box_bottom_new_dim=\dimen160
-\l__box_left_new_dim=\dimen161
-\l__box_right_new_dim=\dimen162
+\l__box_top_dim=\dimen147
+\l__box_bottom_dim=\dimen148
+\l__box_left_dim=\dimen149
+\l__box_right_dim=\dimen150
+\l__box_top_new_dim=\dimen151
+\l__box_bottom_new_dim=\dimen152
+\l__box_left_new_dim=\dimen153
+\l__box_right_new_dim=\dimen154
 \l__box_internal_box=\box46
-\l__coffin_bounding_shift_dim=\dimen163
-\l__coffin_left_corner_dim=\dimen164
-\l__coffin_right_corner_dim=\dimen165
-\l__coffin_bottom_corner_dim=\dimen166
-\l__coffin_top_corner_dim=\dimen167
-\l__coffin_scaled_total_height_dim=\dimen168
-\l__coffin_scaled_width_dim=\dimen169
+\l__coffin_bounding_shift_dim=\dimen155
+\l__coffin_left_corner_dim=\dimen156
+\l__coffin_right_corner_dim=\dimen157
+\l__coffin_bottom_corner_dim=\dimen158
+\l__coffin_top_corner_dim=\dimen159
+\l__coffin_scaled_total_height_dim=\dimen160
+\l__coffin_scaled_width_dim=\dimen161
 L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
 (c:/texlive/2016/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
@@ -531,65 +334,65 @@ File: l3xdvidpfmx.def 2016/03/26 v6465 L3 Experimental driver: xdvipdfmx
 ))
 (c:/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count143
-\l__xparse_m_args_int=\count144
-\l__xparse_mandatory_args_int=\count145
-\l__xparse_processor_int=\count146
-\l__xparse_v_nesting_int=\count147
+\l__xparse_current_arg_int=\count139
+\l__xparse_m_args_int=\count140
+\l__xparse_mandatory_args_int=\count141
+\l__xparse_processor_int=\count142
+\l__xparse_v_nesting_int=\count143
 )
 Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
 
 (c:/texlive/2016/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen170
-\extrarowheight=\dimen171
+\col@sep=\dimen162
+\extrarowheight=\dimen163
 \NC@list=\toks27
-\extratabsurround=\skip64
-\backup@length=\skip65
+\extratabsurround=\skip59
+\backup@length=\skip60
 )
 (c:/texlive/2016/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2016/05/18 v6512 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box48
-\l__siunitx_tmp_dim=\dimen172
-\l__siunitx_tmp_int=\count148
-\l__siunitx_number_mantissa_length_int=\count149
-\l__siunitx_number_uncert_length_int=\count150
-\l__siunitx_round_int=\count151
-\l__siunitx_process_decimal_int=\count152
-\l__siunitx_process_uncertainty_int=\count153
-\l__siunitx_process_fixed_int=\count154
-\l__siunitx_process_integer_min_int=\count155
-\l__siunitx_process_precision_int=\count156
-\l__siunitx_group_min_int=\count157
+\l__siunitx_tmp_dim=\dimen164
+\l__siunitx_tmp_int=\count144
+\l__siunitx_number_mantissa_length_int=\count145
+\l__siunitx_number_uncert_length_int=\count146
+\l__siunitx_round_int=\count147
+\l__siunitx_process_decimal_int=\count148
+\l__siunitx_process_uncertainty_int=\count149
+\l__siunitx_process_fixed_int=\count150
+\l__siunitx_process_integer_min_int=\count151
+\l__siunitx_process_precision_int=\count152
+\l__siunitx_group_min_int=\count153
 \l__siunitx_angle_marker_box=\box49
 \l__siunitx_angle_unit_box=\box50
-\l__siunitx_angle_marker_dim=\dimen173
-\l__siunitx_angle_unit_dim=\dimen174
-\l__siunitx_unit_int=\count158
-\l__siunitx_unit_denominator_int=\count159
-\l__siunitx_unit_numerator_int=\count160
-\l__siunitx_unit_prefix_int=\count161
-\l__siunitx_unit_prefix_base_int=\count162
-\l__siunitx_unit_prefix_gram_int=\count163
-\l__siunitx_number_product_int=\count164
-\c__siunitx_one_fill_skip=\skip66
-\l__siunitx_table_unit_align_skip=\skip67
-\l__siunitx_table_exponent_dim=\dimen175
-\l__siunitx_table_integer_dim=\dimen176
-\l__siunitx_table_mantissa_dim=\dimen177
-\l__siunitx_table_marker_dim=\dimen178
-\l__siunitx_table_result_dim=\dimen179
-\l__siunitx_table_uncert_dim=\dimen180
-\l__siunitx_table_fill_pre_dim=\dimen181
-\l__siunitx_table_fill_post_dim=\dimen182
-\l__siunitx_table_fill_mid_dim=\dimen183
+\l__siunitx_angle_marker_dim=\dimen165
+\l__siunitx_angle_unit_dim=\dimen166
+\l__siunitx_unit_int=\count154
+\l__siunitx_unit_denominator_int=\count155
+\l__siunitx_unit_numerator_int=\count156
+\l__siunitx_unit_prefix_int=\count157
+\l__siunitx_unit_prefix_base_int=\count158
+\l__siunitx_unit_prefix_gram_int=\count159
+\l__siunitx_number_product_int=\count160
+\c__siunitx_one_fill_skip=\skip61
+\l__siunitx_table_unit_align_skip=\skip62
+\l__siunitx_table_exponent_dim=\dimen167
+\l__siunitx_table_integer_dim=\dimen168
+\l__siunitx_table_mantissa_dim=\dimen169
+\l__siunitx_table_marker_dim=\dimen170
+\l__siunitx_table_result_dim=\dimen171
+\l__siunitx_table_uncert_dim=\dimen172
+\l__siunitx_table_fill_pre_dim=\dimen173
+\l__siunitx_table_fill_post_dim=\dimen174
+\l__siunitx_table_fill_mid_dim=\dimen175
 \l__siunitx_table_pre_box=\box51
 \l__siunitx_table_post_box=\box52
 \l__siunitx_table_mantissa_box=\box53
 \l__siunitx_table_result_box=\box54
-\l__siunitx_table_number_align_skip=\skip68
-\l__siunitx_table_text_align_skip=\skip69
+\l__siunitx_table_number_align_skip=\skip63
+\l__siunitx_table_text_align_skip=\skip64
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -723,9 +526,9 @@ Package color Info: Driver file: xetex.def on input line 144.
 )
 (c:/texlive/2016/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip70
-\thanksmargin=\skip71
-\droptitle=\skip72
+\thanksmarkwidth=\skip65
+\thanksmargin=\skip66
+\droptitle=\skip67
 )
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
@@ -780,14 +583,14 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen184
-\Hy@linkcounter=\count165
-\Hy@pagecounter=\count166
+\@linkdim=\dimen176
+\Hy@linkcounter=\count161
+\Hy@pagecounter=\count162
 
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count167
+\Hy@SavedSpaceFactor=\count163
 
 (c:/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -800,17 +603,17 @@ Package hyperref Info: Plain pages OFF on input line 4461.
 Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4691.
-\c@Hy@tempcnt=\count168
+\c@Hy@tempcnt=\count164
 
 (c:/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5044.
-\XeTeXLinkMargin=\dimen185
-\Fld@menulength=\count169
-\Field@Width=\dimen186
-\Fld@charsize=\dimen187
+\XeTeXLinkMargin=\dimen177
+\Fld@menulength=\count165
+\Field@Width=\dimen178
+\Fld@charsize=\dimen179
 Package hyperref Info: Hyper figures OFF on input line 6298.
 Package hyperref Info: Link nesting OFF on input line 6303.
 Package hyperref Info: Hyper index ON on input line 6306.
@@ -820,9 +623,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
 LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count170
-\c@Item=\count171
-\c@Hfootnote=\count172
+\Hy@abspage=\count166
+\c@Item=\count167
+\c@Hfootnote=\count168
 )
 
 Package hyperref Message: Driver (autodetected): hxetex.
@@ -838,10 +641,10 @@ Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box55
-\c@Hy@AnnotLevel=\count173
-\HyField@AnnotCount=\count174
-\Fld@listcount=\count175
-\c@bookmark@seq@number=\count176
+\c@Hy@AnnotLevel=\count169
+\HyField@AnnotCount=\count170
+\Fld@listcount=\count171
+\c@bookmark@seq@number=\count172
 
 (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -852,7 +655,7 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 tly
 (rerunfilecheck)             and the loading of the package is aborted.
 )
-\Hy@SectionHShift=\skip73
+\Hy@SectionHShift=\skip68
 )
 (c:/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -880,12 +683,12 @@ Package: fontspec 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 (c:/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
 X
-\l_fontspec_script_int=\count177
-\l_fontspec_language_int=\count178
-\l_fontspec_strnum_int=\count179
-\l__fontspec_tmpa_dim=\dimen188
-\l__fontspec_tmpb_dim=\dimen189
-\l__fontspec_tmpc_dim=\dimen190
+\l_fontspec_script_int=\count173
+\l_fontspec_language_int=\count174
+\l_fontspec_strnum_int=\count175
+\l__fontspec_tmpa_dim=\dimen180
+\l__fontspec_tmpb_dim=\dimen181
+\l__fontspec_tmpc_dim=\dimen182
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -911,7 +714,7 @@ LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
 (c:/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmss.fd
 File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-\tipaTiiicode=\count180
+\tipaTiiicode=\count176
 \tipasavetokens=\toks28
 \tipachecktokens=\toks29
 )
@@ -1020,15 +823,15 @@ File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 . 
 . Defining command \DeclareFontsExtensions with sig. 'm' on line 599.
 .................................................
-\l__fontspec_tmp_int=\count181
+\l__fontspec_tmp_int=\count177
 
 (c:/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.cfg)
 LaTeX Info: Redefining \itshape on input line 2705.
 LaTeX Info: Redefining \slshape on input line 2710.
 LaTeX Info: Redefining \scshape on input line 2715.
 LaTeX Info: Redefining \upshape on input line 2720.
-\l__fontspec_em_int=\count182
-\l__fontspec_emdef_int=\count183
+\l__fontspec_em_int=\count178
+\l__fontspec_emdef_int=\count179
 LaTeX Info: Redefining \em on input line 2736.
 LaTeX Info: Redefining \emph on input line 2742.
 LaTeX Info: Redefining \- on input line 2746.
@@ -1045,43 +848,43 @@ LaTeX Info: Redefining \- on input line 2746.
 ))
 (c:/texlive/2016/texmf-dist/tex/xelatex/xepersian/xepersian-persiancal.sty
 Package: xepersian-persiancal 2012/07/25 v0.2 provides Persian calendar
-\XePersian@i=\count184
-\XePersian@y=\count185
-\XePersian@m=\count186
-\XePersian@d=\count187
-\XePersian@latini=\count188
-\XePersian@persiani=\count189
-\XePersian@latinii=\count190
-\XePersian@persianii=\count191
-\XePersian@latiniii=\count192
-\XePersian@persianiii=\count193
-\XePersian@latiniv=\count194
-\XePersian@persianiv=\count195
-\XePersian@latinv=\count196
-\XePersian@persianv=\count197
-\XePersian@latinvi=\count198
-\XePersian@persianvi=\count199
-\XePersian@latinvii=\count266
-\XePersian@persianvii=\count267
-\XePersian@latinviii=\count268
-\XePersian@persianviii=\count269
-\XePersian@latinix=\count270
-\XePersian@persianix=\count271
-\XePersian@latinx=\count272
-\XePersian@persianx=\count273
-\XePersian@latinxi=\count274
-\XePersian@persianxi=\count275
-\XePersian@latinxii=\count276
-\XePersian@persianxii=\count277
-\XePersian@persianxiii=\count278
-\XePersian@temp=\count279
-\XePersian@temptwo=\count280
-\XePersian@tempthree=\count281
-\XePersian@yModHundred=\count282
-\XePersian@thirtytwo=\count283
-\XePersian@dn=\count284
-\XePersian@sn=\count285
-\XePersian@mminusone=\count286
+\XePersian@i=\count180
+\XePersian@y=\count181
+\XePersian@m=\count182
+\XePersian@d=\count183
+\XePersian@latini=\count184
+\XePersian@persiani=\count185
+\XePersian@latinii=\count186
+\XePersian@persianii=\count187
+\XePersian@latiniii=\count188
+\XePersian@persianiii=\count189
+\XePersian@latiniv=\count190
+\XePersian@persianiv=\count191
+\XePersian@latinv=\count192
+\XePersian@persianv=\count193
+\XePersian@latinvi=\count194
+\XePersian@persianvi=\count195
+\XePersian@latinvii=\count196
+\XePersian@persianvii=\count197
+\XePersian@latinviii=\count198
+\XePersian@persianviii=\count199
+\XePersian@latinix=\count266
+\XePersian@persianix=\count267
+\XePersian@latinx=\count268
+\XePersian@persianx=\count269
+\XePersian@latinxi=\count270
+\XePersian@persianxi=\count271
+\XePersian@latinxii=\count272
+\XePersian@persianxii=\count273
+\XePersian@persianxiii=\count274
+\XePersian@temp=\count275
+\XePersian@temptwo=\count276
+\XePersian@tempthree=\count277
+\XePersian@yModHundred=\count278
+\XePersian@thirtytwo=\count279
+\XePersian@dn=\count280
+\XePersian@sn=\count281
+\XePersian@mminusone=\count282
 )
 (c:/texlive/2016/texmf-dist/tex/xelatex/xepersian/xepersian-mathsdigitspec.sty
 Package: xepersian-mathsdigitspec 2016/05/03 v1.1.2 Unicode Persian maths digit
@@ -1171,7 +974,7 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count287
+\c@abspage=\count283
 Package zref Info: New property: abspage on input line 62.
 )
 (c:/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -1182,7 +985,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks32
 \XKV@tempa@toks=\toks33
 )
-\XKV@depth=\count288
+\XKV@depth=\count284
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/texlive/2016/texmf-dist/tex/xelatex/bidi/latex-xetex-bidi.def
@@ -1193,7 +996,7 @@ or XeTeX engine
 (c:/texlive/2016/texmf-dist/tex/xelatex/bidi/footnote-xetex-bidi.def
 File: footnote-xetex-bidi.def 2015/11/14 v0.9 bidi footnote macros for XeTeX en
 gine
-\c@footdir@label=\count289
+\c@footdir@label=\count285
 \footdir@toks=\toks35
 )
 (c:/texlive/2016/texmf-dist/tex/xelatex/bidi/report-xetex-bidi.def
@@ -1207,14 +1010,6 @@ ge for XeTeX engine
 (c:/texlive/2016/texmf-dist/tex/xelatex/bidi/amstext-xetex-bidi.def
 File: amstext-xetex-bidi.def 2013/04/04 v0.1 bidi adaptations for amstext packa
 ge for XeTeX engine
-)
-(c:/texlive/2016/texmf-dist/tex/xelatex/bidi/caption-xetex-bidi.def
-File: caption-xetex-bidi.def 2010/07/25 v0.1 bidi adaptations for caption packa
-ge for XeTeX engine
-)
-(c:/texlive/2016/texmf-dist/tex/xelatex/bidi/caption3-xetex-bidi.def
-File: caption3-xetex-bidi.def 2013/04/01 v0.1 bidi adaptations for caption3 pac
-kage for XeTeX engine
 )
 (c:/texlive/2016/texmf-dist/tex/xelatex/bidi/color-xetex-bidi.def
 File: color-xetex-bidi.def 2013/04/08 v0.2 bidi adaptations for color package f
@@ -1350,7 +1145,7 @@ ckage
 File: report-xepersian.def 2010/07/25 v0.2 adaptations for standard report clas
 s
 )
-\g__fontspec_family_lmroman10-regular_int=\count290
+\g__fontspec_family_lmroman10-regular_int=\count286
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1388,8 +1183,43 @@ lmroman10-bolditalic},ItalicFont={lmroman10-italic},SmallCapsFont={lmromancaps1
 . <->"[lmromancaps10-regular]/OT:script=latn;language=DFLT;mapping=tex-text;"
 .................................................
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 27.
-\g__fontspec_family_XBZar_int=\count291
+Package hyperref Info: Option `colorlinks' set `true' on input line 26.
+
+(c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2015/06/04 1.6 listings language file
+)
+(c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2015/06/04 1.6 listings language file
+)
+
+! Package Listings Error: Couldn't load requested language.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 }
+      
+The following languages weren't loadable:
+    ,shell$
+This may cause errors in the sequel.
+
+
+! Package Listings Error: language shell undefined.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 }
+      
+The language is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\g__fontspec_family_XBZar_int=\count287
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1409,13 +1239,13 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 27.
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Font shape `EU1/XBZar(0)/m/n' will be
-(Font)              scaled to size 11.99997pt on input line 36.
+(Font)              scaled to size 11.99997pt on input line 49.
 .................................................
 . fontspec info: "no-scripts"
 . 
 . Font B Nazanin does not contain any OpenType `Script' information.
 .................................................
-\g__fontspec_family_BNazanin_int=\count292
+\g__fontspec_family_BNazanin_int=\count288
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1436,12 +1266,12 @@ LaTeX Font Info:    Font shape `EU1/XBZar(0)/m/n' will be
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
 Package xepersian-mathsdigitspec Info: DefiningthedefaultPersianmathsdigitsfont
-as'B Nazanin' on input line 38.
+as'B Nazanin' on input line 51.
 \symOPERATORS=\mathgroup6
 \symnew@mathbf@font@digits=\mathgroup7
 \symnew@mathit@font@digits=\mathgroup8
 \symnew@mathrm@font@digits=\mathgroup9
-\g__fontspec_family_TimesNewRoman_int=\count293
+\g__fontspec_family_TimesNewRoman_int=\count289
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1466,35 +1296,41 @@ as'B Nazanin' on input line 38.
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->s*[1]"Times New
 . Roman/BI/OT:script=latn;language=DFLT;mapping=tex-text;+smcp;"
 .................................................
-LaTeX Info: Redefining \latinfont on input line 39.
+LaTeX Info: Redefining \latinfont on input line 52.
+(./proposal.aux
 
-(./report.aux)
-\openout1 = `report.aux'.
+LaTeX Warning: Label `fig:boat1' multiply defined.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 69.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 69.
+
+LaTeX Warning: Label `fig:boat1' multiply defined.
+
+)
+\openout1 = `proposal.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 82.
  (c:/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    ... okay on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1530,14 +1366,7 @@ LaTeX Font Info:    ... okay on input line 69.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: listings package is loaded.
-Package caption Info: subfigure package is loaded.
-Package caption Info: wrapfig package is loaded.
-Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count294
+\c@lstlisting=\count290
 
 (c:/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-
 dictionary/translator-basic-dictionary-English.dict
@@ -1547,7 +1376,7 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
 \AtBeginShipoutBox=\box56
-Package hyperref Info: Link coloring ON on input line 69.
+Package hyperref Info: Link coloring ON on input line 82.
 
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1555,38 +1384,38 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count295
+\c@section@level=\count291
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 
-(./report.out) (./report.out)
+(./proposal.out) (./proposal.out)
 \@outlinefile=\write3
-\openout3 = `report.out'.
+\openout3 = `proposal.out'.
 
-\c__siunitx_mathsf_int=\count296
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+\c__siunitx_mathsf_int=\count292
+LaTeX Font Info:    Try loading font information for U+msa on input line 82.
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 82.
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `EU1/BNazanin(0)/m/it' undefined
-(Font)              using `EU1/BNazanin(0)/m/n' instead on input line 69.
+(Font)              using `EU1/BNazanin(0)/m/n' instead on input line 82.
 
-\c__siunitx_mathtt_int=\count297
+\c__siunitx_mathtt_int=\count293
 LaTeX Font Info:    Font shape `EU1/XBZar(0)/m/n' will be
-(Font)              scaled to size 20.73593pt on input line 71.
+(Font)              scaled to size 20.73593pt on input line 84.
 LaTeX Font Info:    Font shape `EU1/XBZar(0)/bx/n' will be
-(Font)              scaled to size 20.73593pt on input line 71.
+(Font)              scaled to size 20.73593pt on input line 84.
 LaTeX Font Info:    Font shape `EU1/XBZar(0)/m/n' will be
-(Font)              scaled to size 14.39996pt on input line 71.
+(Font)              scaled to size 14.39996pt on input line 84.
 (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
@@ -1598,55 +1427,130 @@ LaTeX Font Info:    Font shape `EU1/XBZar(0)/m/n' will be
 (Font)              scaled to size 17.27994pt on input line 1.
 LaTeX Font Info:    Font shape `EU1/XBZar(0)/bx/n' will be
 (Font)              scaled to size 17.27994pt on input line 1.
+LaTeX Font Info:    Font shape `EU1/XBZar(0)/bx/n' will be
+(Font)              scaled to size 14.39996pt on input line 5.
+LaTeX Font Info:    Font shape `EU1/XBZar(0)/bx/n' will be
+(Font)              scaled to size 11.99997pt on input line 21.
 LaTeX Font Info:    Font shape `EU1/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 3.
-File: figs/design.png Graphic file (type QTm)
- <use  "figs/design.png" >
-LaTeX Font Info:    Font shape `EU1/XBZar(0)/bx/n' will be
-(Font)              scaled to size 14.39996pt on input line 12.
-File: figs/circuit.png Graphic file (type QTm)
- <use  "figs/circuit.png" > [1] [2]
-LaTeX Font Info:    Font shape `EU1/XBZar(0)/bx/n' will be
-(Font)              scaled to size 11.99997pt on input line 69.
+(Font)              scaled to size 10.0pt on input line 28.
+ [1]
+File: 1.png Graphic file (type QTm)
+ <use  "1.png" >
+File: sys.png Graphic file (type QTm)
+ <use  "sys.png" >
 
-(c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 86.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[2]
+File: farsiaqi.png Graphic file (type QTm)
+ <use  "farsiaqi.png" > [3] [4] [5]
+! Extended mathchar used as mathchar (104859242).
+<to be read again> 
+                   <
+l.228 ^^I^^I^^I\url{https://bit.ly/3e65PHz}
+                                            &
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
 
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 228
+.
 (c:/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `EU1/TimesNewRoman(0)/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 102.
-File: figs/pic2.jpg Graphic file (type QTm)
+! Extended mathchar used as mathchar (104859242).
+<to be read again> 
+                   <
+l.232 ^^I^^I^^I\url{https://bit.ly/2yTqMW9}
+                                            &
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
 
-<use  "figs/pic2.jpg" >
-File: figs/pic1.jpg Graphic file (type QTm)
- <use  "figs/pic1.jpg" >)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
- (./report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 73.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 73.
+! Extended mathchar used as mathchar (104859242).
+<to be read again> 
+                   <
+l.236 ^^I^^I^^I\url{https://bit.ly/39WaOqL}
+                                            &
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (104859242).
+<to be read again> 
+                   <
+l.240 ^^I^^I^^I\url{https://bit.ly/2yOcZQp}
+                                            &
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (104859242).
+<to be read again> 
+                   <
+l.244 ^^I^^I^^I\url{https://bit.ly/2yQYKuh}
+                                            &
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (104859242).
+<to be read again> 
+                   <
+l.248 ^^I^^I^^I\url{https://bit.ly/2UXo2PN}
+                                           &
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (104859242).
+<to be read again> 
+                   <
+l.252 ^^I^^I^^I\url{https://bit.ly/34rD6s2}
+                                           &
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Argument of \Hy@tempa has an extra }.
+<inserted text> 
+                \par 
+l.263 ...� نیازی به تهیه ندارند.}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\def \reserved@a *{\nobreak \@xcentercr }\reserved@a }\def \ETC.
+! Paragraph ended before \Hy@tempa was complete.
+<to be read again> 
+                   \par 
+l.263 ...� نیازی به تهیه ندارند.}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
+ (./proposal.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 86.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 29331 strings out of 493591
- 547090 string characters out of 6146793
- 597357 words of memory out of 5000000
- 32338 multiletter control sequences out of 15000+600000
- 13541 words of font info for 100 fonts, out of 8000000 for 9000
+ 28173 strings out of 493591
+ 526336 string characters out of 6146793
+ 574230 words of memory out of 5000000
+ 31195 multiletter control sequences out of 15000+600000
+ 13533 words of font info for 99 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 50i,8n,99p,10377b,1202s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,63p,10379b,843s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (4 pages).
+Output written on proposal.pdf (7 pages).

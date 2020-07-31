@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.12.26)  31 JUL 2020 18:54
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.12.26)  31 JUL 2020 19:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1605,31 +1605,41 @@ File: figs/design.png Graphic file (type QTm)
 LaTeX Font Info:    Font shape `EU1/XBZar(0)/bx/n' will be
 (Font)              scaled to size 14.39996pt on input line 12.
 File: figs/circuit.png Graphic file (type QTm)
- <use  "figs/circuit.png" > [1] [2]
-LaTeX Font Info:    Font shape `EU1/XBZar(0)/bx/n' will be
-(Font)              scaled to size 11.99997pt on input line 69.
-
+ <use  "figs/circuit.png" > [1]
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 86.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 53.
 
 
 (c:/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+File: figs/client.png Graphic file (type QTm)
+
+<use  "figs/client.png" > [2]
+File: figs/web.png Graphic file (type QTm)
+ <use  "figs/web.png" > [3]
+LaTeX Font Info:    Font shape `EU1/XBZar(0)/bx/n' will be
+(Font)              scaled to size 11.99997pt on input line 92.
 LaTeX Font Info:    Font shape `EU1/TimesNewRoman(0)/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 102.
+(Font)              scaled to size 10.0pt on input line 125.
 File: figs/pic2.jpg Graphic file (type QTm)
 
 <use  "figs/pic2.jpg" >
 File: figs/pic1.jpg Graphic file (type QTm)
- <use  "figs/pic1.jpg" >)
+ <use  "figs/pic1.jpg" >
+File: figs/multiloc.png Graphic file (type QTm)
+ <use  "figs/multiloc.png" >
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [3]
+ [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./report.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 73.
@@ -1641,12 +1651,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 29331 strings out of 493591
- 547090 string characters out of 6146793
- 597357 words of memory out of 5000000
- 32338 multiletter control sequences out of 15000+600000
+ 29346 strings out of 493591
+ 547260 string characters out of 6146793
+ 599357 words of memory out of 5000000
+ 32350 multiletter control sequences out of 15000+600000
  13541 words of font info for 100 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 50i,8n,99p,10377b,1202s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,8n,99p,10377b,1112s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (4 pages).
+Output written on report.pdf (6 pages).

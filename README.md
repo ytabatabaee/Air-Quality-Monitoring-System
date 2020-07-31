@@ -1,6 +1,8 @@
 # Air Quality Monitoring System
-In this project we developed an air quality monitoring system as our Embedded Systems & IoT Design course project. 
-
+In this project we developed a multi-location air quality monitoring system as our Embedded Systems & IoT Design course project. 
+<p align="center">
+<img src="Report/figs/design.png" alt="drawing" width="600"/>
+</p>
 ## Built With
 
 * [Proteus IoT Builder](https://www.labcenter.com/iotbuilder/) - An extension to Proteus software providing an end to end workflow for the design of IoT appliances on Arduino hardware. 

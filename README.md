@@ -3,6 +3,7 @@ In this project we developed a multi-location air quality monitoring system as o
 <p align="center">
 <img src="Report/figs/design.png" alt="drawing" width="600"/>
 </p>
+
 ## Built With
 
 * [Proteus IoT Builder](https://www.labcenter.com/iotbuilder/) - An extension to Proteus software providing an end to end workflow for the design of IoT appliances on Arduino hardware. 

@@ -44,7 +44,7 @@ async function postData(url = '', data = {}) {
 
 array = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
 async function makeData(){
-	var num_of_devices = 1;
+	var num_of_devices = 3;
 	for (var i = 0; i < 3; i++)
 		for (var j = 0; j < 20; j++)
 			array[i][j] = 0;
@@ -69,15 +69,11 @@ async function makeData(){
 					d = data['hits']['hits'][j]['_source']['data'].slice(42, -3).split(",");
 					for (var k = 0; k < 3; k++){
 					//console.log(parseFloat(d[k]));
-						array[k][j] += parseFloat(d[k]);
+						array[k][j] += (parseFloat(d[k])/num_of_devices);
 					}
 				}
 			});
 	}
-	for (var i = 0; i < 3; i++)
-		for (var j = 0; j < 20; j++)
-			array[i][j] = array[i][j] / num_of_devices;
-	//console.log(array);
 }
 </script>
 
@@ -91,8 +87,8 @@ async function makeData(){
 
         var data_gauge = google.visualization.arrayToDataTable([
           ['Label', 'Value'],
-          ['CO', 0],
           ['CO2', 0],
+          ['CO', 0],
           ['AirIdx', 0]
         ]);
 
@@ -142,17 +138,18 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	toolTip:{
 		shared: true
 	},
-	data: [{
+	data: [
+	{
 		name: "CO",
 		type: "spline",
 		showInLegend: true,
-		dataPoints: dps
+		dataPoints: dps2,
 	},
 	{
 		name: "CO2",
 		type: "spline",
 		showInLegend: true,
-		dataPoints: dps2,
+		dataPoints: dps
 	},
 	{
 		name: "AirIdx",
@@ -192,7 +189,7 @@ var updateChart = async function (count) {
 		
 		setTimeout(function() {
 		yVal = array[2][0];
-		var xmax = YVal;
+		var xmax = yVal;
 		if (xmax >= 0 && xmax <= 50)
 		{
 			document.getElementById('Healthy').style.height = "30px";
@@ -352,13 +349,19 @@ setInterval(async function(){updateChart()}, updateInterval);
 </tbody>
 </table>
 
-<div id="chart_div" style="width: 400px; height: 120px;"></div>
+<div id="chart_div" style="width: 400px; height: 120px; margin:0 auto;"></div>
 
-<div id="loc1_container" style="height: 500px; width:100%;">
+<div id="loc1_container" style="height: 500px; width:100%; margin-top:15px;">
+<h3 style="color:white; text-align:center;"> Location 1 </h1>
+<iframe id=location src="http://localhost:8080" title="Location 1" style="height: 475px; width:100%;"></iframe></div>
 
+<div id="loc2_container" style="height: 500px; width:100%;  margin-top:15px;">
+<h3 style="color:white; text-align:center;"> Location 2 </h1>
+<b><b>
+<iframe id=location src="http://localhost:8081" title="Location 2" style="height: 475px; width:100%;"></iframe></div>
 
-<div id="chart_div" style="width: 400px; height: 120px;"></div>
-<div id="loc1_container" style="height: 500px; width:100%;">
-<iframe id=location src="http://localhost:8080", title="Locations" style="height: 475px; width:100%;"></iframe></div>
+<div id="loc3_container" style="height: 500px; width:100%; margin-top:15px;">
+<h3 style="color:white; text-align:center;"> Location 3 </h1>
+<iframe id=location src="http://localhost:8082" title="Location 3" style="height: 475px; width:100%;"></iframe></div>
 </body>
 </html>

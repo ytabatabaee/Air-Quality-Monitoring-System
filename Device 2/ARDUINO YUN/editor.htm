@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Virtual Front Panel</title>
+      <link rel="icon" type="image/png" href="favicon.png" />
+
+      <style>    
+         body {
+            margin: 0;
+            padding: 0;
+         }          
+        
+         div.outer {
+            display: table;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+         }
+ 
+         div.middle {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+         }
+
+         div.panel {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto; 
+            position: relative;
+         }      
+             
+         svg.panel {
+            border-style: solid;
+            border-width: 2px;
+            margin-left: auto;
+            margin-right: auto;            
+         }
+         
+         .canvas {
+            position: absolute;
+         } 
+         
+         p.error  {
+            font-weight : bold;
+            background-color: white;
+            color :  #FF0000;
+         }
+         
+         rect.multisel {
+            stroke: red;
+            stroke-width: 2;            
+            stroke-dasharray: 4,4;
+            fill-opacity: 0;   
+         }
+         
+         rect.singlesel {
+            stroke: grey;
+            stroke-width: 1;            
+            stroke-dasharray: 4,4;
+            fill-opacity: 0;   
+         }
+
+
+         rect.handle {           
+            stroke: black;
+            stroke-width: 2;
+            fill: white;            
+            fill-opacity: 1;   
+         }
+
+         rect.node {
+            stroke: black;
+            stroke-width: 1;
+            fill: white;            
+            fill-opacity: 1;   
+         }
+         
+         rect.handle:hover {
+             fill: lime;                     
+         }  
+
+         rect.node:hover {
+             fill: red;                     
+         }  
+   
+         rect.image {
+            stroke: blue;
+            stroke-width: 1;            
+            stroke-dasharray: 4,4;
+            fill-opacity: 0;
+   
+         }
+
+      </style>      
+
+      <script>
+         var loadedScripts = [];
+         
+         function require (filename) {
+            // This function provides a bypass for script loading under the editor. We know the script we are trying to load and we know, potentially that we are 
+            // running under a simulator etc. So now, if we are under the simulator, we can re-direct the script request back to the dev browser.                        
+            for (var i in loadedScripts)
+               if (loadedScripts[i] == filename)
+                  return;
+            loadedScripts.push(filename);
+            
+            // Get the file extension
+            var re = /(?:\.([^.]+))?$/;            
+            var ext = re.exec(filename)[1];  
+            
+            // Create a SCRIPT or LINK object to hold the script
+            var newScript;            
+            if (ext == "js") {
+               var content = editor.loadLibrary(filename);                                                            
+               newScript = document.createElement("script");
+               newScript.type = "text/javascript";
+               if (content.length > 0) {
+                  newScript.textContent = content;
+               } else {
+                  newScript.src = filename;           
+                  newScript.async = false;
+               }
+            } else if (ext == "css") {
+               newScript = document.createElement("link");
+               newScript.href = filename;
+               newScript.rel="stylesheet";
+               newScript.type="text/css";
+            }
+               
+            document.head.appendChild(newScript);
+         }
+
+      </script>
+
+      <script>
+          // In a real panel, this sets up the reverse AJAX pipe:
+          function statusRequest() {}
+          function statusAbort() {}
+
+          // In a real panel, this function sends an xhttp request but for 
+          // control development we just write to the log.
+          function postEvent (id, msg) { sendMessage ("POST", id, null, msg); }          
+          function postState (id, state, msg) { sendMessage ("POST", id, state, msg); }
+          function recordState (id, state, msg) { sendMessage ("PUT", id, state, msg); }
+          
+          function sendMessage (action, id, state, msg) {         
+             var params = "";
+             if (msg === undefined)
+                console.log("POST: "+id);
+             else {
+                if (typeof(msg)!='Array')
+                   msg = [ msg ];               
+                for (var i in msg) { 
+                   if (typeof(msg[i]) === 'string')
+                      msg[i] = JSON.stringify(msg[i]);
+                   if (i > 0)
+                      params = params+',';   
+                   params = params + msg[i];
+                }
+                if (state != null)
+                   console.log(action+": "+id+"."+state+"="+params)
+                else   
+                   console.log(action+": "+id+"="+params);
+             }
+          }
+          
+          // In a real panel, this function sends an xhttp request for a file
+          // and then processes it. For control development it will fetch the file
+          // from the project resource folder.
+          function requestFile (filename, requestFunc) {
+             requestFunc(editor.loadResource(filename));
+          }
+            
+      </script>
+      
+      <script src="jquery.js" type="text/javascript"></script>
+      <script src="panel.js" type="text/javascript"></script>
+      <script src="editor.js" type="text/javascript"></script>
+      <script src="controls.js" type="text/javascript"></script>
+      
+       
+   </head>
+
+<body onload="initPage()">
+    <div class="outer">
+      <div class="middle">
+        <div id="container" class="panel"><P>Loading panel graphics...</P></div>
+      </div>
+    </div>
+</body>
+
+</HTML>
+

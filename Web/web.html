@@ -189,7 +189,8 @@ var updateChart = async function (count) {
 		
 		setTimeout(function() {
 		yVal = array[2][0];
-		var xmax = yVal;
+		var xmax = (array[2][0] > array[1][0])?(array[2][0]>array[0][0]?array[2][0]:array[0][0]):(array[1][0]>array[0][0]?array[1][0]:array[0][0]);
+		console.log(xmax);
 		if (xmax >= 0 && xmax <= 50)
 		{
 			document.getElementById('Healthy').style.height = "30px";
